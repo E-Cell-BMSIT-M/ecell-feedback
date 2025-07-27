@@ -427,7 +427,7 @@ async function finishQuestionnaire() {
         } else {
             const errorText = await response.text();
             console.error('Error submitting survey:', response.status, errorText);
-            alert('There was an error submitting your survey. Please try again.');
+            alert('There was an error submitting your survey! Please try again.');
             return;
         }
     } catch (error) {
